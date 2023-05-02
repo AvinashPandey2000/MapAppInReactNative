@@ -49,7 +49,7 @@
 
 import React, { useState } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import MapView, {PROVIDER_GOOGLE,Marker} from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE,Marker,Circle} from 'react-native-maps';
 import CustomeMarker from './src/components/CustomeMarker';
 export default function componentName() {
   const [mapRegion , setmapRegion]=useState({
@@ -65,10 +65,11 @@ export default function componentName() {
         provider={PROVIDER_GOOGLE}
         style={styles.map}
         region={mapRegion}>
+        <Circle center={mapRegion} radius={500}/>
+       
         <Marker coordinate={mapRegion} title='Marker'>
-          <CustomeMarker src={src}/>
-        </Marker>
-        
+        <CustomeMarker src={src}/>
+      </Marker>
         </MapView>
     </View>
   );

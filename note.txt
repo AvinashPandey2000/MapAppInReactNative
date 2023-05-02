@@ -11,3 +11,9 @@
         />
     ))
   }
+
+
+
+###### if you  want  to  show the location inside the circle
+   ex:<Circle center={mapRegion} radius={500}/>
+   mapRegion me lat,long aayege and radius defin the circle size
