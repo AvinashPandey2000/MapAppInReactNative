@@ -2,7 +2,6 @@ import {View, Text, StyleSheet,Image} from 'react-native';
 import React from 'react';
 
 export default function CustomeMarker({src}) {
-    console.log('src :',src)
   return (
     <View style={styles.conariner}>
     <Image source={{uri: src}}
