@@ -1,3 +1,14 @@
+******* get location from the mobile
+step 1: import 
+step 2: android>app>src>main>androidManifest.xml
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+step 3: know you can write the code 
+
+
+
+
 ######if you want to pin all the location then do this#######
   1: get all the latitude, longitude (import)
   ex: import {location} from '../'
@@ -17,3 +28,5 @@
 ###### if you  want  to  show the location inside the circle
    ex:<Circle center={mapRegion} radius={500}/>
    mapRegion me lat,long aayege and radius defin the circle size
+
+
