@@ -1,3 +1,8 @@
+*********** mak a root from one point to another
+
+
+
+
 ******* get location from the mobile
 step 1: import 
 step 2: android>app>src>main>androidManifest.xml
